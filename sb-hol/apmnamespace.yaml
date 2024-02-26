@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  labels:
+    kubernetes.io/metadata.name: default
+  annotations:
+    instrumentation.opentelemetry.io/inject-java: "opentelemetry-operator-system/inst-apm-java"
+  name: default

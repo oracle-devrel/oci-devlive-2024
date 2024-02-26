@@ -1,0 +1,13 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: Instrumentation
+metadata:
+  name: inst-apm-java
+  namespace: opentelemetry-operator-system
+spec:
+  java:
+    image: us-ashburn-1.ocir.io/idpyjkbcc9tk/apm-java-agent-aio:latest
+    env:
+      - name: OTEL_com_oracle_apm_agent_data_upload_endpoint
+        value: <apm-endpoint>
+      - name: OTEL_com_oracle_apm_agent_private_data_key
+        value: <apm-private-data-key>
