@@ -34,7 +34,7 @@ export async function bumpMaven(level = "patch") {
 export async function getVersionMaven() {
   try {
     const { stdout, exitCode, stderr } =
-      await $`grep "version = " build.gradle`;
+      await $`grep "<version>" pom.xml`;
     if (exitCode !== 0) {
       exitWithError(stderr);
     }
@@ -47,7 +47,7 @@ export async function getVersionMaven() {
 
 export async function buildJarMaven() {
   try {
-    const { stdout, exitCode, stderr } = await $`maven clean install`;
+    const { stdout, exitCode, stderr } = await $`mvn clean install`;
     if (exitCode !== 0) {
       exitWithError(stderr);
     }
