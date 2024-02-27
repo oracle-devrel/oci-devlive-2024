@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.example</groupId>
-	<artifactId>admessage</artifactId>
+	<artifactId>AdMessage</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>admessage</name>
+	<name>AdMessage</name>
 	<description>Rest API to fetch targeted ads for customers</description>
 
 	<parent>
