@@ -21,7 +21,7 @@ export async function bumpMaven(level = "patch") {
   }
   try {
     const { exitCode, stderr } =
-      await $`sed -I -e '/^version/s/${oldVersion}/${newVersion}/g' pom.xml`;
+      await $`sed -i -e "s/${oldVersion}/${newVersion}/g" pom.xml`;
     if (exitCode !== 0) {
       exitWithError(stderr);
     }
@@ -34,11 +34,11 @@ export async function bumpMaven(level = "patch") {
 export async function getVersionMaven() {
   try {
     const { stdout, exitCode, stderr } =
-      await $`grep "<version>" pom.xml`;
+      await $`grep "<version>" pom.xml | head -1`;
     if (exitCode !== 0) {
       exitWithError(stderr);
     }
-    const version = stdout.trim().split("</version>")[0].replaceAll("<version>", "");
+    const version = stdout.trim().split("</version>")[0].replace("<version>", "");
     return version;
   } catch (error) {
     exitWithError(error.stderr);
