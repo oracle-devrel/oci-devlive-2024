@@ -51,10 +51,6 @@ spec:
             value: file:/spring/wstore.properties
           - name: spring.web.resources.static-locations
             value: file:/spring/static/
-          - name: apm.dataupload.endpoint
-            value: <apm-endpoint>
-          - name: apm.public.datakey
-            value: <apm-private-data-key>
           - name: winStore.services.adservice
             value: http://${WSTORE_BACKEND_SERVICE_HOST}:${WSTORE_BACKEND_SERVICE_PORT}/adService/prodId
 ---
