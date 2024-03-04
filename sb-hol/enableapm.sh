@@ -7,10 +7,10 @@ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/
 kubectl apply -f https://github.com/open-telemetry/opentelemetry-operator/releases/latest/download/opentelemetry-operator.yaml
 
 # Configure APM agent using K8 operator
-kubectl apply -f ~/sb-hol/customapmresource.yaml
+kubectl apply -f ~/oci-devlive-2024/sb-hol/customapmresource.yaml
 
 # Appyly APM java agent through the K8 namespace
-kubectl apply -f ~/sb-hol/apmnamespace.yaml
+kubectl apply -f ~/oci-devlive-2024/sb-hol/apmnamespace.yaml
 
 # Redeploy application
-kubectl apply -f ~/sb-hol/wstore.yaml
+kubectl apply -f ~/oci-devlive-2024/sb-hol/wstore.yaml
