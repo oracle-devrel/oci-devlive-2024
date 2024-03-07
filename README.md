@@ -1,20 +1,29 @@
-# oci-devlive-2024
+# Implementing Intelligent Application Development
 
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_oci-devlive-2024)](https://sonarcloud.io/dashboard?id=oracle-devrel_oci-devlive-2024)
 
-## THIS IS A NEW, BLANK REPO THAT IS NOT READY FOR USE YET.  PLEASE CHECK BACK SOON!
+## This repo contains supporting files for the Intelligent App Dev Hands-on Lab
+
+![Link to workshop guide](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wec=7625-GFDB-QRPZ-RFTK&request=109399795131694&session=109399795131694)
 
 ## Introduction
-MISSING
+This workshop guides you through the process of provisioning a MySQL HeatWave database on OCI, enhancing a Spring Boot application with Oracle AI code assistant, incorporating OpenTelemetry instrumentation, and deploying the application on an Oracle Kubernetes cluster. You will learn how to monitor the application using the Oracle Application Performance Management Service, leveraging OpenTelemetry traces and metrics for comprehensive end-to-end monitoring and diagnostics. Additionally, the workshop covers the utilization of Oracle Cloud Infrastructure (OCI) Database Management to monitor the MySQL HeatWave database and Logging Analytics for Kubernetes and application logs.
 
-## Getting Started
-MISSING
+### Objectives
+
+In this workshop, you will:
+* Create an APM domain, obtain Data Upload Endpoint and Data Keys
+* Create Oracle Kubernetes cluster 
+* Create MySQL HeatWave Database 
+* Use Oracle AI Code Assist to build microservice application 
+*	Instrument APM Browser agent and Open telemetry auto instrumentation of server code
+*	Use APM Trace Explorer to view traces, spans, and span dimensions
+* Use Database Management to review query performances
+* Use Logging analytics to analyze Kubernetes logs 
 
 ### Prerequisites
-MISSING
 
-## Notes/Issues
-MISSING
+* An Oracle Free Tier with a 30-day free trial or Paid Cloud Account - Please view this workshop's LiveLabs landing page to see which environments are supported.
 
 ## URLs
 * Nothing at this time
@@ -23,7 +32,7 @@ MISSING
 This project is open source.  Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
 
 ## License
-Copyright (c) 2022 Oracle and/or its affiliates.
+Copyright (c) 2024 Oracle and/or its affiliates.
 
 Licensed under the Universal Permissive License (UPL), Version 1.0.
 
