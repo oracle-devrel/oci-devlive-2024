@@ -4,7 +4,7 @@
 
 ## This repo contains supporting files for the Intelligent App Dev Hands-on Lab
 
-![Link to workshop guide](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wec=7625-GFDB-QRPZ-RFTK&request=109399795131694&session=109399795131694)
+[Link to workshop guide](https://apexapps.oracle.com/pls/apex/r/dbpm/livelabs/view-workshop?wec=7625-GFDB-QRPZ-RFTK&request=109399795131694&session=109399795131694)
 
 The following button will open OCI Code Editor in your tenancy and allow you to clone this repository directly into your cloud account.
 
