@@ -47,7 +47,7 @@ module "oke" {
 
   # worker_nsg_ids = []
 
-  worker_pools = {
+/*  worker_pools = {
     oke-vm-standard-e3-flex = {
       description      = "${local.project_name}-${local.deploy_id}-vm-e3-flex",
       shape            = "VM.Standard.E3.Flex",
@@ -61,6 +61,7 @@ module "oke" {
     },
   }
 }
+*/
 
 data "oci_containerengine_cluster_option" "test_cluster_option" {
   cluster_option_id = "all"
