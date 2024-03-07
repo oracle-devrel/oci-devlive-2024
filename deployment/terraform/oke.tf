@@ -59,9 +59,9 @@ module "oke" {
       os               = "Oracle Linux",
       os_version       = "8",
     },
-  }
+  }*/
 }
-*/
+
 
 data "oci_containerengine_cluster_option" "test_cluster_option" {
   cluster_option_id = "all"
