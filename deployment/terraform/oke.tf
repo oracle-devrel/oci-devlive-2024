@@ -48,9 +48,9 @@ module "oke" {
   # worker_nsg_ids = []
 
   worker_pools = {
-    oke-vm-standard-e4-flex = {
-      description      = "${local.project_name}-${local.deploy_id}-vm-e4-flex",
-      shape            = "VM.Standard.E4.Flex",
+    oke-vm-standard-e3-flex = {
+      description      = "${local.project_name}-${local.deploy_id}-vm-e3-flex",
+      shape            = "VM.Standard.E3.Flex",
       size             = 1,
       create           = true,
       ocpus            = 1,
