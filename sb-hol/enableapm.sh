@@ -12,5 +12,5 @@ kubectl apply -f ~/oci-devlive-2024/sb-hol/customapmresource.yaml
 # Appyly APM java agent through the K8 namespace
 kubectl apply -f ~/oci-devlive-2024/sb-hol/apmnamespace.yaml
 
-# Redeploy application
-kubectl apply -f ~/oci-devlive-2024/sb-hol/wstore.yaml
+# To reflect the changes done at namespace - recreate the pods
+kubectl delete pods --all
