@@ -4,7 +4,7 @@
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.3/cert-manager.yaml
 
 # Apply K8 OpenTelemetry Operator
-kubectl apply -f https://github.com/open-telemetry/opentelemetry-operator/releases/latest/download/opentelemetry-operator.yaml
+kubectl apply -f https://github.com/open-telemetry/opentelemetry-operator/releases/download/v0.95.0/opentelemetry-operator.yaml
 
 # Configure APM agent using K8 operator
 kubectl apply -f ~/oci-devlive-2024/sb-hol/customapmresource.yaml
