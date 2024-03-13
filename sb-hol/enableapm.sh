@@ -3,6 +3,9 @@
 # Apply Cert-Manager
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.14.3/cert-manager.yaml
 
+# Wait just a minute
+echo "Waiting for the previous task to complete." && sleep 45
+
 # Apply K8 OpenTelemetry Operator
 kubectl apply -f https://github.com/open-telemetry/opentelemetry-operator/releases/download/v0.95.0/opentelemetry-operator.yaml
 
