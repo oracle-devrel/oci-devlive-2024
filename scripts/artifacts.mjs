@@ -53,7 +53,7 @@ async function buildAndReleaseServiceAdMessage() {
   const image_name = `${service}`;
   await buildImage(`localhost/${image_name}`, version);
   const local_image = `localhost/${image_name}:${version}`;
-  const remote_image = `${registry_url}/${namespace}/${repository_name}/${image_name}:${version}`;
+  const remote_image = `${registry_url}/${namespace}/${repository_name}:${version}`;
   await tagImage(local_image, remote_image);
   await pushImage(remote_image);
   console.log(`Released: ${chalk.yellow(remote_image)}`);
