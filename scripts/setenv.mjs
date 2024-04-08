@@ -13,7 +13,7 @@ import {
 } from "./lib/oci.mjs";
 import { createSSHKeyPair } from "./lib/crypto.mjs";
 
-const shell = process.env.SHELL | "/bin/zsh";
+const shell = process.env.SHELL | "/bin/bash";
 $.shell = shell;
 $.verbose = false;
 
