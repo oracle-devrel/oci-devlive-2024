@@ -13,7 +13,10 @@ import {
 } from "./lib/oci.mjs";
 import { createSSHKeyPair } from "./lib/crypto.mjs";
 
-const shell = process.env.SHELL | "/bin/bash";
+/** Fix - cloud shell without zsh and not having env varaible SHELL**/
+/*const shell = process.env.SHELL | "/bin/bash";*/
+process.env.SHELL = "/bin/bash";
+const shell = process.env.SHELL;
 $.shell = shell;
 $.verbose = false;
 
