@@ -11,7 +11,10 @@ import {
 import { readEnvJson } from "./lib/utils.mjs";
 import { getOutputValues } from "./lib/terraform.mjs";
 
-const shell = process.env.SHELL | "/bin/zsh";
+/** Fix - cloud shell without zsh and not having env varaible SHELL**/
+/*const shell = process.env.SHELL | "/bin/zsh";*/
+process.env.SHELL = "/bin/bash";
+const shell = process.env.SHELL;
 $.shell = shell;
 $.verbose = false;
 
